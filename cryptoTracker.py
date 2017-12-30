@@ -13,13 +13,19 @@ LTCnet = LTCvalue - LTCinvestment
 
 print 'Litecoin Net = %s ' %(LTCnet)
 
+
+
+
 BTC = data.getPair(market = 'USDT', coin = 'BTC')
 
-BTCvalue = float(BTC.last) * 0.021749
+BTCvalue = float(BTC.last) * (0.021749 + 0.06901669)
 
-BTCinvestment = 102.99
+BTCinvestment = 102.99 + 500.00
 
 BTCnet = BTCvalue - BTCinvestment
+
+
+
 
 print 'Bitcoin Net = %s ' %(BTCnet)
 
